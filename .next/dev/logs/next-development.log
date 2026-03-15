@@ -1,0 +1,103 @@
+[00:00:09.282] Server  LOG     ✓ Ready in 8.1s
+[00:00:12.508] Server  LOG     ○ Compiling / ...
+[00:00:18.928] Server  WARN    ⚠ Lockfile was successfully patched, please run "npm install" to ensure @next/swc dependencies are downloaded
+[00:00:34.582] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:34.928] Server  WARN    ⚠ Cross origin request detected from 192.168.10.52 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:35.085] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:35.351] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function HomePage} serverProvidedParams={{...}}>
+                  <HomePage params={Promise} searchParams={Promise}>
+                    <Header>
+                    <main>
+                      <section>
+                      <section>
+                      <section>
+                      <section>
+                      <section id="pricing" className="scroll-mt-...">
+                        <div className="mx-auto ma...">
+                          <h2>
+                          <p>
+                          <div className="mt-12 grid...">
+                            <div className="rounded-2x...">
+                              <h3>
+                              <p className="mt-1 text-3xl font-bold text-deep-900 dark:text-white">
++                               $0.00
+-                               $0,00
+                              ...
+                            ...
+                          ...
+                      ...
+                    ...
+              ...
+            ...
+
+[00:00:36.282] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+      <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} segmentPath={[...]} ...>
+              <SegmentViewNode type="page" pagePath="page.tsx">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function HomePage} serverProvidedParams={{...}}>
+                  <HomePage params={Promise} searchParams={Promise}>
+                    <Header>
+                    <main>
+                      <section>
+                      <section>
+                      <section>
+                      <section>
+                      <section id="pricing" className="scroll-mt-...">
+                        <div className="mx-auto ma...">
+                          <h2>
+                          <p>
+                          <div className="mt-12 grid...">
+                            <div className="rounded-2x...">
+                              <h3>
+                              <p className="mt-1 text-3xl font-bold text-deep-900 dark:text-white">
++                               $0.00
+-                               $0,00
+                              ...
+                            ...
+                          ...
+                      ...
+                    ...
+              ...
+            ...
+
+[00:00:38.102] Server  LOG     ○ Compiling /api/auth/me ...
+[00:00:44.404] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[00:00:50.335] Server  WARN    [next-auth][warn][NEXTAUTH_URL] "\nhttps://next-auth.js.org/warnings#nextauth_url"
+[00:01:55.804] Server  LOG     ○ Compiling /admin ...

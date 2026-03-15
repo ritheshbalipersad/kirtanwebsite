@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={outfit.variable}>
-      <body className="min-h-screen bg-white text-deep-900 antialiased dark:bg-deep-950 dark:text-deep-50">
+    <html lang="en" className={outfit.variable} suppressHydrationWarning>
+      <body className="min-h-screen bg-white font-sans text-deep-900 antialiased dark:bg-deep-950 dark:text-deep-50" style={{ fontFamily: "var(--font-outfit), system-ui, sans-serif" }}>
         <AuthProvider>
           <UserProvider>
             <PreferencesProvider>{children}</PreferencesProvider>
