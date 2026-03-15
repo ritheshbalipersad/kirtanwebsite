@@ -1,0 +1,9 @@
+# cPanel Git deployment – runs when you pull/deploy from Git
+# Requires: .next/ committed to repo (build locally: npm run build, then commit & push)
+# In cPanel: Setup Node.js App → Application root = this repo path, Startup file = node_modules/next/dist/bin/next start
+
+---
+deployment:
+  tasks:
+    - export NODE_ENV=production
+    - /bin/bash -c "npm install --production"

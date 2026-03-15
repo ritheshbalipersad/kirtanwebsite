@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build (keep .next/ in repo for cPanel prod – build locally then commit)
+# .next/
+.next/cache/
+out/
+build/
+dist/
+
+# Env and secrets
+.env
+.env*.local
+
+# Data (local store)
+data/
+
+# Debug and IDE
+npm-debug.log*
+.DS_Store
+*.pem
+.idea
+.vscode
